@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/api/*": {
         "origins": [
-            "https://ai-product-recommender-5bbpvme4s-sahajys-projects.vercel.app/",  # Production frontend
+            "https://ai-product-recommender-git-main-sahajy.vercel.app",  # Production frontend
             "http://localhost:3000"  # Local development
         ],
         "supports_credentials": True
