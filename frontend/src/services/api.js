@@ -1,10 +1,10 @@
 export const fetchProducts = async () => {
-  const response = await fetch('http://localhost:5000/api/products');
+  const response = await fetch('https://ai-product-recommender-f2t3.onrender.com/api/products');
   return response.json();
 };
 
 export const getRecommendations = async (data) => {
-  const response = await fetch('http://localhost:5000/api/recommendations', {
+  const response = await fetch('https://ai-product-recommender-f2t3.onrender.com/api/recommendations', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
