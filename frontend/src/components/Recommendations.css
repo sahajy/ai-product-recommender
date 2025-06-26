@@ -1,0 +1,43 @@
+.recommendations {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.recommendations h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.recommendation-list {
+  display: grid;
+  gap: 15px;
+}
+
+.recommendation-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.recommendation-item:hover {
+  background: #ecf0f1;
+  transform: translateX(5px);
+}
+
+.recommendation-item h3 {
+  margin: 0 0 10px;
+  color: #3498db;
+}
+
+.recommendation-item .reason {
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+
+.recommendation-item .price {
+  font-weight: bold;
+  color: #27ae60;
+}
