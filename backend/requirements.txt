@@ -4,3 +4,4 @@ requests
 flask-cors
 pydantic
 together
+gunicorn==20.1.0
