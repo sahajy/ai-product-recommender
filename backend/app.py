@@ -5,7 +5,15 @@ import json
 from flask_cors import CORS 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={
+    r"/api/*": {
+        "origins": [
+            "https://ai-product-recommender-sahajy.vercel.app/",  # Production frontend
+            "http://localhost:3000"  # Local development
+        ],
+        "supports_credentials": True
+    }
+})
 
 @app.route('/api/products', methods=['GET'])
 def products():
