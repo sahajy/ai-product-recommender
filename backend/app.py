@@ -14,6 +14,8 @@ CORS(app, resources={
         "supports_credentials": True
     }
 })
+def log_request():
+    print(f"Received request: {request.method} {request.path}")
 
 @app.route('/api/products', methods=['GET'])
 def products():
