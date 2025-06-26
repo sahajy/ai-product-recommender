@@ -1,0 +1,48 @@
+/* Main Layout */
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.app-container {
+  display: flex;
+  gap: 30px;
+}
+
+.left-panel {
+  width: 300px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Loading & Error States */
+.loading {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.2rem;
+  color: #3498db;
+}
+
+.error-message {
+  background-color: #ffecec;
+  color: #e74c3c;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #e74c3c;
+}
